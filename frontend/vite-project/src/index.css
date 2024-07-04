@@ -34,21 +34,27 @@ body {
 
 h1 {
   font-size: 3.5em;
+  text-align: center;
   
 }
 textarea {
-  height: 200px;
+  height: 100px;
   width: 500px;
+  text-align: start;
 }
 div{
-  padding: 10px;
+  padding: 5px;
   
 }
 input{
   height: 30px;
-  width: 500px;
+  width: 300px;
 }
-
+label{
+  padding: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
 
 button {
   border-radius: 4px;
