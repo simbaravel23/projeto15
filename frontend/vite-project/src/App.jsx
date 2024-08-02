@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import VideoGallery from './components/VideosGallary';
 import axios from 'axios';
 import {
   BrowserRouter as Router,
@@ -111,7 +112,8 @@ function Payment() {
     <div className="App">
       <h1>Página de Pagamento</h1>
       {/* Implementar a lógica de pagamento aqui */}
-      <button onClick={handlePaymentSuccess}>Simular Pagamento</button>
+      <link rel="stylesheet" href="https://www.mercadopago.com.br/checkout/v1/payment/redirect/?source=link&preference-id=32712465-1982f3f2-25d7-4678-a903-ad80c3d66395&router-request-id=26792edd-1163-4b13-aa0d-c7bc30bb260a" />
+      <button onClick={handlePaymentSuccess}>Simular </button>
     </div>
   );
 }
@@ -120,10 +122,15 @@ function Videos() {
   return (
     <div className="App">
       <h1>Vídeos do Desafio</h1>
-      {<iframe width="560" height="315" src="https://www.youtube.com/embed/BRp8y3EF9yM?si=-gqAhwttoYNrsaJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
+        <div className="App">
+      <VideoGallery />
     </div>
+     
+    </div>
+    
   );
 }
+
 
 function App() {
   return (
