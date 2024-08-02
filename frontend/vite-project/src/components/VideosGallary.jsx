@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import VideoList from './VideoList';
 import VideoPlayer from './Video.Player';
+import './VideosGallary.css'
 
 
 const videos = [
