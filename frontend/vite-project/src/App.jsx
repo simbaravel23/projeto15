@@ -1,6 +1,6 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import VideoGallery from './components/VideosGallary';
+import Pagamento from './components/Pagamento';
 import axios from 'axios';
 import {
   BrowserRouter as Router,
@@ -111,10 +111,14 @@ function Payment() {
   return (
     <div className="App">
       <h1>Página de Pagamento</h1>
+     
+    <Pagamento/>
+
       {/* Implementar a lógica de pagamento aqui */}
-      <link rel="stylesheet" href="https://www.mercadopago.com.br/checkout/v1/payment/redirect/?source=link&preference-id=32712465-1982f3f2-25d7-4678-a903-ad80c3d66395&router-request-id=26792edd-1163-4b13-aa0d-c7bc30bb260a" />
-      <button onClick={handlePaymentSuccess}>Simular </button>
+      
+      <button onClick={handlePaymentSuccess}> videos </button>
     </div>
+      
   );
 }
 
